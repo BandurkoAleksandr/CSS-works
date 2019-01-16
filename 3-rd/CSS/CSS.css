@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #626262;
+}
+.container {
+    padding: 0 100px;
+    max-width: 1400px;
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+.flex-header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+img.logo {
+    width: 200px;
+}
+i.fa-navicon {
+    font-size: 25px;
+}
+.big, 
+.flex-half, 
+.menu .line:last-of-type,
+.address p:last-of-type,
+.wrapper-border {
+    margin-bottom: 105px;
+}
+/*тут можно сделать вложенность*/
+.big {
+    width: 100%;
+}
+.big img {
+    width: 100%;
+}
+/* тут можно сделать вложенность*/
+.flex-half {
+    justify-content: center;
+    align-items: center;
+}
+.flex-half:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+.half {
+    width: 50%;
+}
+.half img {
+    width: 100%;
+}
+p {
+    font-size: 24px;
+    text-align: center;
+}
+.half p {
+    margin: 0 80px;
+    line-height: 1.5;
+    text-align: left;
+}
+/* для р элементов можно сделать вложенность через SCSS*/
+p.heading {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 105px;
+}
+p.capitalize {
+    text-transform: capitalize;
+}
+p.capitalize b {
+    color: black;
+}
+div.line {
+    width: 210px;
+    height: 4px;
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.menu, .reservation  {
+    text-align: center;
+}
+div.menu p.heading, 
+div.reservation p.heading, 
+div.open-close p.heading {
+    margin: 0;
+}
+i.fa-star {
+    color: black;
+    margin: 0 15px;
+}
+.reservation button {
+    padding: 40px 60px;
+    border: 5px solid black;
+    font-size: 35px;
+    background-color: white;
+    margin: 30px 0 105px;
+}.open-close .line {
+    margin-top: 24px;
+}
+.wrapper {
+    width: 850px;
+    margin: 0 auto;
+}
+.address p {
+    font-size: 35px;
+}
+label p {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.wrapper-border {
+    width: 800px;
+    border: 5px solid black;
+    padding: 10px 30px;
+    margin: 90px auto;
+    align-items: center;
+}
+.form-group-input {
+    width: 80%;
+}
+.form-group-button {
+    width: 20%;
+    justify-content: space-around;
+}
+.submit-button,
+.form-control {
+    border: none;
+    background-color: white;
+    font-size: 24px;
+    color: #626262;
+}
+.vertical-line {
+    border-left: 1px solid gray;
+    height: 80px;
+}
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 30px 0;
+}
